@@ -90,39 +90,41 @@
         </style>
 
         <!--need to install javascript compiler. none of this is doing anything-->
-        <script>
-            const slideGallery = document.querySelector('.slides');
-            const slides = slideGallery.querySelectorAll('div');
-            const thumbnailContainer = document.querySelector('.thumbnails');
-            const slideCount = slides.length;
-            const slideWidth = 540;
+        <script type="text/javascript">
+            // const slideGallery = document.querySelector('.slides');
+            // const slides = slideGallery.querySelectorAll('div');
+            // const thumbnailContainer = document.querySelector('.thumbnails');
+            // const slideCount = slides.length;
+            // const slideWidth = 540;
 
-            const highlightThumbnail = () => {
-                thumbnailContainer
-                    .querySelectorAll('div.highlighted')
-                    .forEach(el => el.classList.remove('highlighted'));
-                const index = Math.floor(slideGallery.scrollLeft / slideWidth);
-                thumbnailContainer
-                    .querySelector(`div[data-id="${index}"]`)
-                    .classList.add('highlighted');
-            };
+            // const highlightThumbnail = () => {
+            //     thumbnailContainer
+            //         .querySelectorAll('div.highlighted')
+            //         .forEach(el => el.classList.remove('highlighted'));
+            //     const index = Math.floor(slideGallery.scrollLeft / slideWidth);
+            //     thumbnailContainer
+            //         .querySelector(`div[data-id="${index}"]`)
+            //         .classList.add('highlighted');
+            // };
 
-            const scrollToElement = el => {
-                const index = parseInt(el.dataset.id, 10);
-                slideGallery.scrollTo(index * slideWidth, 0);
-            };
+            // const scrollToElement = el => {
+            //     const index = parseInt(el.dataset.id, 10);
+            //     slideGallery.scrollTo(index * slideWidth, 0);
+            // };
 
-            thumbnailContainer.innerHTML += [...slides]
-            .map((slide, i) => `<div data-id="${i}"></div>`)
-            .join('');
+            // thumbnailContainer.innerHTML += [...slides]
+            // .map((slide, i) => `<div data-id="${i}"></div>`)
+            // .join('');
 
-            thumbnailContainer.querySelectorAll('div').forEach(el => {
-            el.addEventListener('click', () => scrollToElement(el));
-            });
+            // thumbnailContainer.querySelectorAll('div').forEach(el => {
+            // el.addEventListener('click', () => scrollToElement(el));
+            // });
 
-            slideGallery.addEventListener('scroll', e => highlightThumbnail());
+            // slideGallery.addEventListener('scroll', e => highlightThumbnail());
 
-            highlightThumbnail();
+            // highlightThumbnail();
+
+            Document.getElementById("title").innerHTML = "YO.";
         </script>
 
     </head>
@@ -147,5 +149,9 @@
             <div><img src="https://picsum.photos/id/299/540/720"></div>
         </div>
         </div>
+
+        <script type="text/javascript">
+            document.querySelector('#subtitle').innerHTML('YO.');
+        </script>
     </body>
 </html>
