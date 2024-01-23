@@ -63,10 +63,23 @@
             }
             #gallery {
                 display:grid;
-                grid-auto-flow: column;
-                overflow-x: scroll;
-                scrollbar-width: none;
+                gap: 0.5em;
             }
+            
+            .gridRow {
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+                gap: 2%;
+                justify-content: center;
+                grid-template-rows: 5.5em;
+            }
+
+            .gridRow img {
+                height: 100%;
+            }
+
+            
 
 
         </style>
@@ -101,7 +114,14 @@
         <div id="myWork">
             <h2>My Work</h2>
             <div id="gallery">
-
+                <div class="gridRow">
+                    <img src="https://github.com/myakay38/Portfolio/blob/main/hcpCover.png?raw=true" alt="the handicap calculator homescreen">
+                    <img src="https://github.com/myakay38/Portfolio/blob/main/hcpCover.png?raw=true" alt="the handicap calculator homescreen">
+                    <img src="https://github.com/myakay38/Portfolio/blob/main/hcpCover.png?raw=true" alt="the handicap calculator homescreen">
+                </div>
+                <div class="gridRow">
+                    <img src="https://github.com/myakay38/Portfolio/blob/main/hcpCover.png?raw=true" alt="the handicap calculator homescreen">
+                </div>
             </div>
 
         </div>
