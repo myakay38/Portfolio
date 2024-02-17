@@ -5,6 +5,9 @@
         <title>Portfolio-Mya Kay</title>
 
         <style>
+            :root {
+                --accentColor: rgb(67, 67, 255);
+            }
             body {
                 background-color:white;
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -14,7 +17,7 @@
             }
             #header {
                 color:white;
-                background-color: rgb(67, 67, 255);
+                background-color: var(--accentColor);
                 margin-top: 0;
                 margin-left: 0;
                 margin-right: 0;
@@ -35,7 +38,6 @@
                 width: 100%;
                 display: grid;
                 grid-auto-flow: column;
-                gap: 1em;
                 grid-template-columns: 49.5% 1% 49.5%;
                 justify-content: center;
                 text-align: center;
@@ -51,13 +53,14 @@
 
             .iconContainer img {
                 width: 3em;
+                height: 3em;
             }
             #divisorLine {
                 width: 0.2em;
                 background-color: rgb(175, 175, 175);
             }
             #myWork {
-                color:  rgb(67, 67, 255);
+                color:  var(--accentColor);
                 padding: 1%;
             }
 
@@ -71,7 +74,7 @@
             }
 
             #myWork hr {
-                border-top: 1px solid  rgb(67, 67, 255);;
+                border-top: 1px solid var(--accentColor);
             }
             
         </style>
@@ -90,8 +93,8 @@
                     <img src="https://img.icons8.com/fluency/48/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
                     <img src="https://img.icons8.com/fluency/48/python.png" alt="python"/>
                     <img src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
-                    <img src="https://icons8.com/icon/20909/html-5" alt="HTML5">
-                    <img src="https://icons8.com/icon/21278/css3" alt="CSS">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
                 </div></section>
                 
             </div>
@@ -100,7 +103,9 @@
                 <h2>Tools</h2>
                 <div class="iconContainer">
                     <img src="https://img.icons8.com/color/48/git.png" alt="git"/>
-                    <img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/>    
+                    <img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/>  
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/apache-netbeans.png" alt="apache-netbeans"/>
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/visual-studio.png" alt="visual-studio"/>  
                 </div>
             </div>
         </div>
@@ -113,7 +118,7 @@
             <hr>
         </div>
 
-       <h6 id="imgsrc">Icons retrieved from: <a href="https://icons8.com/icons">Icons8.com</a></h6>
+       <h6 id="imgsrc">Icons by <a href="https://icons8.com/icons">Icons8</a></h6>
 
     </body>
 </html>
